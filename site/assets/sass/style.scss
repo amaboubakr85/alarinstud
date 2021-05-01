@@ -3,7 +3,7 @@ $secondary_color: #fff;
 $main_color: #c1c8ce;
 $alt_color: #8a9197;
 
-@import url('http://fonts.cdnfonts.com/css/frutiger-lt-arabic');
+@import url('https://fonts.cdnfonts.com/css/frutiger-lt-arabic');
 * {
   padding: 0;
   margin: 0;
@@ -263,60 +263,6 @@ img {
     }
   }
 }
-
-// .site-footer {
-//   background: $primary_color;
-//   height: 300px;
-//   .footer-links,
-//   .footer-social {
-//     margin-top: 3rem;
-//   }
-//   .footer-links {
-//     // margin: 2rem 0;
-//     ul {
-//       display: grid;
-//       grid-template-columns: repeat(2, 1fr);
-//       list-style: none;
-//       margin-top: 1.2rem;
-//       li {
-//         padding: 10px 0;
-//       }
-//     }
-//   }
-//   .footer-item {
-//     color: $secondary_color;
-
-//     .social-icons {
-//       margin-top: 1.2rem;
-//       display: flex;
-//       justify-content: center;
-//       align-items: center;
-//       ul {
-//         list-style: none;
-//         display: flex;
-//         li {
-//           margin: 0.4rem 0.8rem;
-//         }
-//       }
-//     }
-//   }
-//   img {
-//     max-width: 150px;
-//   }
-//   .footer-img-container {
-//     position: relative;
-
-//     img {
-//       position: absolute;
-//       width: 100%;
-//       top: -3px;
-//       left: 32%;
-//     }
-//   }
-//   .footer-img-container-res {
-//     display: none;
-//   }
-// }
 
 .site-footer {
   background-color: $primary_color;
