@@ -190,6 +190,7 @@ img {
 
 .news .news-item .card .news-img-container {
   position: relative;
+  overflow: hidden;
 }
 
 .news .news-item .card .news-img-container .news-overlay {
@@ -206,6 +207,7 @@ img {
   flex-direction: column;
   opacity: 0;
   transition: 0.5s all ease;
+  z-index: 3;
 }
 
 .news .news-item .card .news-img-container .news-overlay i {
@@ -215,6 +217,15 @@ img {
 
 .news .news-item .card .news-text {
   color: #8a9197;
+}
+
+.news .news-item .card .news-img-container img {
+  transform: scale(1.3);
+  transition: all 0.4s ease;
+}
+
+.news .news-item .card:hover .news-img-container img {
+  transform: scale(1);
 }
 
 .news .news-item .card:hover .card-body .news-text {
