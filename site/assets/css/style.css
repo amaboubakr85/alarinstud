@@ -184,6 +184,143 @@ img {
   margin: 0px 0%;
 }
 
+.news .news-item {
+  margin: 1.5rem 0;
+}
+
+.news .news-item .card .news-img-container {
+  position: relative;
+}
+
+.news .news-item .card .news-img-container .news-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(13, 20, 60, 0.8);
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.news .news-item .card .news-img-container .news-overlay i {
+  color: #fff;
+  font-size: 20px;
+}
+
+.news .news-item .card .news-text {
+  color: #8a9197;
+}
+
+.news .news-item .card:hover .card-body .news-text {
+  color: #0d143c;
+}
+
+.news .news-item .card:hover .news-img-container .news-overlay {
+  opacity: 1;
+}
+
+.subscribe {
+  background: rgba(193, 200, 206, 0.1);
+}
+
+.subscribe .subscribe-items {
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscribe .subscribe-items .follow-us {
+  max-width: 250px;
+  color: #0d143c;
+}
+
+.subscribe .subscribe-items .subscribe-item {
+  text-align: right;
+}
+
+.subscribe .subscribe-items .subscribe-item .form-subscribe {
+  direction: ltr;
+  max-width: 90%;
+}
+
+.subscribe .subscribe-items .subscribe-item .form-subscribe .subscribe-btn-container {
+  width: 30%;
+}
+
+.subscribe .subscribe-items .subscribe-item .form-subscribe .subscribe-btn-container .subscribe-btn {
+  width: 100%;
+  color: #fff;
+  background: #0d143c;
+}
+
+.subscribe .subscribe-items .subscribe-item .form-subscribe .txt-subscribe {
+  padding: 25px 35px;
+  text-align: right;
+}
+
+.site-footer {
+  background: #0d143c;
+  height: 300px;
+}
+
+.site-footer .footer-links,
+.site-footer .footer-social {
+  margin-top: 3rem;
+}
+
+.site-footer .footer-links ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  list-style: none;
+  margin-top: 1.2rem;
+}
+
+.site-footer .footer-links ul li {
+  padding: 10px 0;
+}
+
+.site-footer .footer-item {
+  color: #fff;
+}
+
+.site-footer .footer-item .social-icons {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.site-footer .footer-item .social-icons ul {
+  list-style: none;
+  display: flex;
+}
+
+.site-footer .footer-item .social-icons ul li {
+  margin: 0.4rem 0.8rem;
+}
+
+.site-footer img {
+  max-width: 150px;
+}
+
+.site-footer .footer-img-container {
+  position: relative;
+}
+
+.site-footer .footer-img-container img {
+  position: absolute;
+  width: 100%;
+  top: -3px;
+  left: 32%;
+}
+
 @media screen and (max-width: 414px) {
   .nav-main .navbar-nav .nav-item.active a::after {
     width: 87%;
