@@ -266,80 +266,59 @@ img {
 }
 
 .site-footer {
-  background: #0d143c;
+  background-color: #0d143c;
+  width: 100%;
   height: 300px;
-}
-
-.site-footer .footer-links,
-.site-footer .footer-social {
-  margin-top: 3rem;
-}
-
-.site-footer .footer-links ul {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  list-style: none;
-  margin-top: 1.2rem;
-}
-
-.site-footer .footer-links ul li {
-  padding: 10px 0;
-}
-
-.site-footer .footer-item {
   color: #fff;
 }
 
-.site-footer .footer-item .social-icons {
-  margin-top: 1.2rem;
+.site-footer .footer-items {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.site-footer .footer-items .footer-item h3 {
+  margin: 1.7rem 0;
+}
+
+.site-footer .footer-items .footer-item .footer-links ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1rem 3rem;
+}
+
+.site-footer .footer-items .footer-item .footer-links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.site-footer .footer-items .footer-item .footer-socials {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.site-footer .footer-item .social-icons ul {
+.site-footer .footer-items .footer-item .footer-socials ul {
   list-style: none;
   display: flex;
 }
 
-.site-footer .footer-item .social-icons ul li {
-  margin: 0.4rem 0.8rem;
+.site-footer .footer-items .footer-item .footer-socials ul li {
+  margin: 0 0.5rem;
 }
 
-.site-footer img {
-  max-width: 150px;
-}
-
-.site-footer .footer-img-container {
-  position: relative;
-}
-
-.site-footer .footer-img-container img {
-  position: absolute;
-  width: 100%;
-  top: -3px;
-  left: 32%;
-}
-
-.site-footer .footer-img-container-res {
-  display: none;
+.site-footer .footer-items .footer-item .footer-socials ul li a {
+  color: #fff;
 }
 
 @media screen and (max-width: 414px) {
   .nav-main .navbar-nav .nav-item.active a::after {
     width: 87%;
   }
-  .footer-img-container {
-    display: none;
-  }
   .site-footer {
     height: 100%;
-  }
-  .site-footer .footer-img-container-res {
-    display: block;
-  }
-  .site-footer img {
-    margin-top: -2px;
   }
   .navbar-toggler-icon {
     border: 1px solid #fff;
@@ -352,5 +331,19 @@ img {
   }
   .subscribe .subscribe-items .subscribe-item .form-subscribe {
     max-width: 100%;
+  }
+  .site-footer .footer-items {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer-item-img {
+    order: 1;
+  }
+  .footer-item-img .footer-img-container img {
+    margin-top: -1px;
+  }
+  .news .news-title h3::after {
+    width: 70%;
   }
 }
