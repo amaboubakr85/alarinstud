@@ -150,7 +150,7 @@ img {
             span {
               margin: 0 10px;
             }
-            .pedigree {
+            .pedigreex {
               color: $alt_color;
             }
             .sub {
@@ -351,6 +351,353 @@ img {
   }
 }
 
+// * single horse page
+
+// * hero
+.single-hero {
+  background: #333 url('../images/single-hero.png') no-repeat center center/cover;
+  color: #fff;
+  min-height: 700px;
+  position: relative;
+  .single-hero-content {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background: rgba($primary_color, 0.8);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: right !important;
+    height: 100%;
+    line-height: 1.4;
+    .single-hero-container {
+      max-width: 1100px;
+      margin: 0 4rem;
+      padding-top: 3rem;
+    }
+  }
+  .single-nav {
+    ul {
+      list-style: none;
+      display: flex;
+      li {
+        margin: 0 0.5rem;
+        a {
+          color: $secondary_color;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+  .single-content {
+    hr {
+      border: 1px solid $alt_color;
+    }
+    .single-info {
+      // ul {
+      //   list-style: none;
+      //   li {
+      //     margin-bottom: 1.5rem;
+      //   }
+      // }
+      table {
+        color: $secondary_color;
+        .cell {
+          width: 20%;
+        }
+      }
+    }
+  }
+}
+
+.single-nav {
+  margin-bottom: 2rem;
+  .head-img {
+    img {
+      max-width: 80px;
+      margin-top: 1rem;
+    }
+  }
+}
+
+// * about horse
+.about-horse {
+  .about-items {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .about-item {
+      line-height: 2;
+      text-align: justify;
+      h2 {
+        color: $primary_color;
+      }
+      p {
+        color: $alt_color;
+      }
+    }
+  }
+}
+
+// * planning gallery
+.planning-gallery {
+  position: relative;
+  height: 600px;
+  max-width: 1100px;
+  margin: 50px auto;
+  .swiper-container {
+    .swiper-wrapper {
+      .swiper-slide {
+        width: 100%;
+      }
+    }
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  background-size: cover;
+  background-position: center;
+}
+
+.gallery-top {
+  height: 80%;
+  width: 100%;
+}
+
+.gallery-thumbs {
+  height: 20%;
+  box-sizing: border-box;
+  padding: 10px 0;
+}
+
+.gallery-thumbs .swiper-slide {
+  height: 100%;
+  opacity: 0.4;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 1;
+}
+
+// * Horse pedigree
+
+.pedigree {
+  background: url('../images/pedigree.png') no-repeat center center / cover;
+  min-height: 80vh;
+  position: relative;
+  color: $secondary_color;
+
+  &-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    background: rgba($primary_color, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-container {
+    max-width: 1100px;
+    width: 100%;
+    margin: auto;
+    .pedigree-items {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .pedigree-item {
+        &.one {
+          flex: 1;
+        }
+        &.two {
+          flex: 3;
+        }
+      }
+    }
+  }
+}
+
+// pedigree
+
+.tree-container {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  overflow: hidden;
+}
+
+.tree-container #wrapper {
+  position: relative;
+}
+
+.tree-container .branch {
+  position: relative;
+  margin-right: 250px;
+}
+
+@media (max-width: 768px) {
+  .tree-container .branch {
+    margin: 125px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tree-container .branch {
+    margin: 90px;
+  }
+}
+
+.tree-container .branch:before {
+  content: '';
+  width: 50px;
+  border-top: 2px solid $secondary_color;
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  margin-top: 1px;
+}
+
+.tree-container .entry {
+  position: relative;
+  min-height: 90px;
+}
+
+.tree-container .entry:before {
+  content: '';
+  height: 100%;
+  border-right: 2px solid $secondary_color;
+  position: absolute;
+  right: -50px;
+}
+
+.tree-container .entry:after {
+  content: '';
+  width: 50px;
+  border-top: 2px solid $secondary_color;
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  margin-top: 1px;
+}
+
+.tree-container .entry:first-child:before {
+  width: 10px;
+  height: 50%;
+  top: 50%;
+  margin-top: 2px;
+  border-radius: 0 10px 0 0;
+}
+
+.tree-container .entry:first-child:after {
+  height: 10px;
+  border-radius: 0 10px 0 0;
+}
+
+.tree-container .entry:last-child:before {
+  width: 10px;
+  height: 50%;
+  border-radius: 0 0 10px 0;
+}
+
+.tree-container .entry:last-child:after {
+  height: 10px;
+  border-top: none;
+  border-bottom: 2px solid $secondary_color;
+  border-radius: 0 0 10px 0;
+  margin-top: -9px;
+}
+
+.tree-container .entry.sole:before {
+  display: none;
+}
+
+.tree-container .entry.sole:after {
+  width: 50px;
+  height: 0;
+  margin-top: 1px;
+  border-radius: 0;
+}
+
+.tree-container .label {
+  // display: block;
+  //padding: 8px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 150px;
+  line-height: 20px;
+  text-align: center;
+  border: 2px solid $secondary_color;
+  border-radius: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  margin-top: -15px;
+  background-color: $secondary_color;
+  color: $primary_color;
+  z-index: 100;
+  .ex {
+    border: 5px solid $primary_color;
+    padding: 5px 56px;
+  }
+}
+
+.tree-container .dam {
+  background-color: $secondary_color;
+}
+
+// pedigree
+
+.videos {
+  height: 700px;
+  .videos-content {
+    display: flex;
+    width: 1100px;
+
+    // height: 450px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    position: relative;
+    .overlay {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(#000, 0.5);
+      top: 0;
+      left: 0;
+      border-radius: 2px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+      opacity: 1;
+
+      img {
+        width: 70px;
+        cursor: pointer;
+        height: 70px;
+      }
+    }
+  }
+  video {
+    width: 100%;
+    border-radius: 2px;
+  }
+}
+
 // * media query
 
 @media screen and (max-width: 414px) {
@@ -399,5 +746,23 @@ img {
         justify-content: center;
       }
     }
+  }
+
+  // single page
+  .single-nav {
+    .head-img {
+      img {
+        display: none;
+      }
+    }
+  }
+
+  .pedigree-container .pedigree-items .pedigree-item.one h3 {
+    font-size: 20px;
+    padding: 5px;
+  }
+  .videos {
+    height: 100%;
+    padding: 3px;
   }
 }

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <script src="https://kit.fontawesome.com/a7b5ca2322.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon.png" />
@@ -14,7 +15,7 @@
   <body dir="rtl" class="text-right">
     <!-- !Header -  navbar -->
     <header>
-      <nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light nav-main">
+      <nav id="nav-main" class="navbar navbar-expand-lg navbar-light bg-light nav-main single-nav">
         <div class="container-fluid">
           <!-- <a class="navbar-brand" href="#">Navbar</a> -->
           <button
@@ -31,7 +32,9 @@
           <div class="collapse navbar-collapse nav-main_container" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item active">
-                <a class="nav-link" href="#">الريسية <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="./index.html"
+                  >الريسية <span class="sr-only">(current)</span></a
+                >
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">المربط</a>
@@ -40,6 +43,9 @@
                 <a class="nav-link" href="#">خيل الجمال</a>
               </li>
             </ul>
+            <div class="head-img">
+              <img src="./assets/images/logo.png" alt="" />
+            </div>
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" href="#">خيل السرعة <span class="sr-only">(current)</span></a>
@@ -58,22 +64,268 @@
     <!-- !Header -  navbar-->
 
     <!-- ! hero section -->
-    <section id="hero" class="hero">
-      <div class="hero-content">
-        <div class="hero-content__container">
-          <img src="./assets/images/logo.png" class="img-fluid" alt="" srcset="" />
-          <a href="#" class="btn btn-main">مكتبة المربط المرئية</a>
+    <section class="single-hero">
+      <div class="single-hero-content">
+        <div class="single-hero-container">
+          <div class="row">
+            <div class="col">
+              <div class="single-nav">
+                <ul>
+                  <li><a href="#">الرئيسية</a></li>
+                  <li>/</li>
+                  <li><a href="#">الخيل</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 single-img-container">
+              <img src="./assets/images/single-horse.png" alt="single-horse" />
+            </div>
+            <div class="col-md-6 single-content">
+              <h5>أطلال</h5>
+              <hr />
+              <div class="single-info">
+                <div class="row">
+                  <div class="col">
+                    <table class="table table-borderless">
+                      <tbody>
+                        <tr>
+                          <td class="cell">اللون</td>
+                          <td>أحمر</td>
+                        </tr>
+                        <tr>
+                          <td class="cell">الجنس</td>
+                          <td>فرس</td>
+                        </tr>
+                        <tr>
+                          <td class="cell">الميلاد</td>
+                          <td>2018</td>
+                        </tr>
+                        <tr>
+                          <td class="cell">الأب</td>
+                          <td>SUWAITI AL KHALEDIAH IV</td>
+                        </tr>
+                        <tr>
+                          <td class="cell">الأم</td>
+                          <td>BASALH</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <!-- ! hero section -->
 
     <!-- ! about the horse -->
 
     <section id="about-horse" class="about-horse">
-      <h3>about horses</h3>
+      <div class="container">
+        <div class="row about-items">
+          <div class="col-md-4 about-item">
+            <h2>التعريف</h2>
+          </div>
+          <div class="col-md-8 about-item">
+            <p>
+              لوريم ايبسوم دولار سيت أميت ,كونسيكتيتور أدايبا يسكينج أليايت,سيت دو أيوسمود تيمبور
+              أنكايديديونتيوت لابوري ات دولار ماجنا أليكيوا . يوت انيم أد مينيم فينايم,كيواس نوستريد
+              أكسير سيتاشن يللأمكو لابورأس نيسي يت أليكيوب أكس أيا كوممودو كونسيكيوات . ديواس
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
     <!-- ! about the horse -->
+
+    <!-- !horse Pedigree -->
+    <section class="pedigree" id="pedigree">
+      <div class="pedigree-content">
+        <div class="pedigree-container">
+          <div class="pedigree-items">
+            <div class="pedigree-item one"><h3>نسب الخيل</h3></div>
+            <div class="pedigree-item two">
+              <!-- pedigree -->
+
+              <div class="tree-container">
+                <div id="wrapper">
+                  <span class="label name"><span class="ex">الاسم</span></span>
+                  <div class="branch lv1">
+                    <div class="entry">
+                      <span class="label"><span class="ex">الأب</span></span>
+                      <div class="branch lv2">
+                        <div class="entry">
+                          <span class="label"><span class="ex">الجد</span></span>
+                        </div>
+                        <div class="entry">
+                          <span class="label dam"><span class="ex">الجدة</span></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="entry">
+                      <span class="label dam"><span class="ex">الأم</span></span>
+                      <div class="branch lv2">
+                        <div class="entry">
+                          <span class="label"><span class="ex">الجد</span></span>
+                        </div>
+                        <div class="entry">
+                          <span class="label dam"><span class="ex">الجدة</span></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- pedigree -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !horse Pedigree -->
+
+    <!-- !gallery -->
+    <div class="planning-gallery">
+      <!-- Swiper -->
+      <div class="swiper-container gallery-top">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/1.jpeg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/2.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/3.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/4.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/5.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/6.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/7.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/8.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/1.jpeg)"
+          ></div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next swiper-button-white"></div>
+        <div class="swiper-button-prev swiper-button-white"></div>
+      </div>
+      <div class="swiper-container gallery-thumbs">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/1.jpeg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/2.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/3.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/4.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/5.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/6.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/7.jpg)"
+          ></div>
+          <div
+            class="swiper-slide"
+            style="background-image: url(./assets/images/gallery/8.jpg)"
+          ></div>
+        </div>
+      </div>
+    </div>
+    <!-- !gallery -->
+
+    <!-- ! videos -->
+    <section id="videos" class="videos d-flex align-items-center justify-content-center">
+      <div class="videos-content">
+        <div class="overlay">
+          <img id="play" class="play" src="./assets/images/play.png" alt="" />
+        </div>
+        <video class="video-play">
+          <source src="./assets/videos/horse.mp4" type="video/mp4" />
+          <source src="./assets/videos/horse.mp4" type="video/ogg" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </section>
+    <!-- ! videos -->
+
+    <!-- !subscribe -->
+
+    <section id="subscribe" class="subscribe">
+      <div class="container">
+        <div class="row subscribe-items">
+          <div class="col-md-4 subscribe-item follow-us">
+            <p>تابعنا</p>
+            <p>لتصلك اجدد الأخبار</p>
+          </div>
+          <div class="col-md-8 subscribe-item">
+            <form class="form-subscribe" action="" method="post">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend subscribe-btn-container">
+                  <button
+                    class="btn btn-outline-secondary subscribe-btn"
+                    type="button"
+                    id="button-addon1"
+                  >
+                    اشتراك الآن
+                  </button>
+                </div>
+                <input
+                  type="text"
+                  class="form-control txt-subscribe"
+                  placeholder="البريد الإلكتروني"
+                  aria-label="email address"
+                  aria-describedby="button-addon1"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !subscribe -->
 
     <!-- !Footer -->
 
@@ -141,7 +393,7 @@
 
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
-
+    <script src="./assets/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/index.js"></script>
   </body>
 </html>
